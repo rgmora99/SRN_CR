@@ -34,3 +34,25 @@ docs/                  # Documentación funcional y técnica
 3. Conectar Supabase para autenticación y persistencia.
 4. Implementar endpoint `POST /planning/generate`.
 5. Integrar proveedor de IA con salida en JSON validado.
+
+
+## Evitar subir `node_modules` a Git
+1. Ya quedó configurado `.gitignore` para ignorar `node_modules` en todo el monorepo.
+2. Si alguna carpeta `node_modules` ya fue agregada al índice de Git, quitála del seguimiento sin borrarla de tu disco:
+
+```bash
+git rm -r --cached node_modules apps/*/node_modules
+```
+
+3. Confirmá que no se estén versionando dependencias:
+
+```bash
+git status --short
+```
+
+4. Hacé commit de la limpieza:
+
+```bash
+git add .gitignore
+git commit -m "chore: ignore node_modules in repo"
+```
