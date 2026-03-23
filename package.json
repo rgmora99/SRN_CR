@@ -1,0 +1,17 @@
+{
+  "name": "asistente-planeamiento-docente",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo base para asistente de planeamiento docente",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "dev:api": "echo \"Inicializa Express en apps/api\"",
+    "lint": "echo \"Configura eslint\"",
+    "test": "echo \"Configura pruebas\"",
+    "lint:web": "npm --workspace apps/web run lint"
+  }
+}
