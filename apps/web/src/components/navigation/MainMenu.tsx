@@ -1,6 +1,8 @@
 export type MenuItem = {
   id: string;
   label: string;
+  hint?: string;
+  icon?: string;
   badge?: string;
 };
 
@@ -18,7 +20,16 @@ export function MainMenu({ items, activeItemId }: MainMenuProps) {
         return (
           <li key={item.id}>
             <button className={`menu-item ${isActive ? "menu-item-active" : ""}`} type="button">
-              <span>{item.label}</span>
+              <span className="menu-item-main">
+                <span className="menu-icon" aria-hidden="true">
+                  {item.icon ?? "•"}
+                </span>
+                <span>
+                  <strong>{item.label}</strong>
+                  {item.hint ? <small>{item.hint}</small> : null}
+                </span>
+              </span>
+
               {item.badge ? <span className="badge">{item.badge}</span> : null}
             </button>
           </li>
