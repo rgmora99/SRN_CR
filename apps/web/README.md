@@ -14,3 +14,6 @@ Aplicación Next.js para el panel docente.
 - `src/components/ui/Card.tsx`
 - `src/components/planning/QuickActionCard.tsx`
 - `src/components/planning/ClassSummaryCard.tsx`
+- `src/components/planning/PlanningStepList.tsx`
+- `src/components/planning/SuggestionList.tsx`
+- `src/components/planning/RecentPlansTable.tsx`
