@@ -8,9 +8,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev:web": "echo \"Inicializa Next.js en apps/web\"",
+    "dev:web": "npm --workspace apps/web run dev",
     "dev:api": "echo \"Inicializa Express en apps/api\"",
     "lint": "echo \"Configura eslint\"",
-    "test": "echo \"Configura pruebas\""
+    "test": "echo \"Configura pruebas\"",
+    "lint:web": "npm --workspace apps/web run lint"
   }
 }

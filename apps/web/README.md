@@ -1,14 +1,16 @@
 # apps/web
 
-Frontend del asistente docente.
+Aplicación Next.js para el panel docente.
 
-## Responsabilidades
-- Formulario de entrada del planeamiento.
-- Visualización y edición de propuesta generada.
-- Gestión de historial de planeamientos.
+## Scripts
+- `npm run dev`
+- `npm run build`
+- `npm run start`
+- `npm run lint`
 
-## Estructura sugerida
-- `src/app`: rutas/páginas.
-- `src/components`: componentes reutilizables.
-- `src/lib`: clientes API, utilidades.
-- `src/styles`: estilos globales.
+## Componentes reutilizables base
+- `src/components/layout/AppShell.tsx`
+- `src/components/navigation/MainMenu.tsx`
+- `src/components/ui/Card.tsx`
+- `src/components/planning/QuickActionCard.tsx`
+- `src/components/planning/ClassSummaryCard.tsx`
