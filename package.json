@@ -1,0 +1,16 @@
+{
+  "name": "asistente-planeamiento-docente",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Monorepo base para asistente de planeamiento docente",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "echo \"Inicializa Next.js en apps/web\"",
+    "dev:api": "echo \"Inicializa Express en apps/api\"",
+    "lint": "echo \"Configura eslint\"",
+    "test": "echo \"Configura pruebas\""
+  }
+}
